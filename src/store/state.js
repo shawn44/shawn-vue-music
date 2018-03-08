@@ -3,7 +3,7 @@ const state = {
   singer: {},
   playing: false,
   fullScreen: false,
-  playList: [],
+  playlist: [],
   sequenceList: [],
   mode: playMode.sequence,
   currentIndex: -1
