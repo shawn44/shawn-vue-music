@@ -362,10 +362,17 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 			 else {
 			  reject()
 			}	?????? ESLINT 报错
-			
-			
-			
-			
+		
+		滚动歌词组件
+			准备好dom结构
+			循环currentLyric，如果在播放调用play方法
+			修改currentLineNum和当前激活class
+			引入scroll组件，让歌词组件滚动起来
+			歌词自动滚动
+		歌词和唱片页面左右滑动效果
+			在div middle中监听touchstart，move， end 事件
+			created中添加this.touch变量
+			当move的时候让lyric右滑
 			
 			
 			
