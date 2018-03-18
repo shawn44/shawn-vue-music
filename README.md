@@ -344,13 +344,24 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 	歌词页面
 		歌词数据的抓取
 			通过研究返现，该接口需要动态传入歌曲id，但是做了域名限制，需要nodejs做代理
-				在api中新建方法
+				在api中新建song文件
 				然后在devserver配置代理接口
 			 		
+				但返回数据是jsonp callback 的形式，所以要对他进行字符串正则的处理，返回给前台
+				
+		歌词数据处理；
+			由于歌词是base64类型，所以要对字符串进行转码，这里用到第三方库
+			js-base64，添加依赖
+			在song。js中使用该库，要看以下该插件的官网
+			然后对该字符串进行解析，解析成我们能使用的文本，这里也要用到第三方库
+			lyric-parser  
+			对请求接口进行优化，如果已经存在歌词不要重复请求接口
 					
-					
-					
-			
+			在player中引入lyric-parser  
+			调用lyric-parser，把歌词传入进行处理，拿到一个歌词对象
+			 else {
+			  reject()
+			}	?????? ESLINT 报错
 			
 			
 			
