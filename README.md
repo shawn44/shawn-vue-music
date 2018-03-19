@@ -373,6 +373,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 			在div middle中监听touchstart，move， end 事件
 			created中添加this.touch变量
 			当move的时候让lyric右滑
+			在touchend的时候进行处理
+			
+			此章处理见视频
 			
 			
 			
