@@ -376,13 +376,23 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 			在touchend的时候进行处理
 			
 			此章处理见视频
+		
+	播放器内核优化
+		1.歌词切换重复滚动，因为第三方库使用定时器，所以在切换新歌词之前要清楚当前定时器
+		2、暂停的时候要把歌词暂停	
+		3、循环播放的时候点击下一首歌词并没有从新开始
+		4、进度条改变歌词没有跟着变化
+		5、当获取不到歌词的情况
+		6、歌曲列表为 1 的时候
 			
 			
-			
-		
-		
-		
-		
+	播放器页面显示一行歌词
+	
+	mini 播放器 遮挡列表优化
+		封装mixin 
+		activated keep-alive激活的时候的组件
+		底部自适应就是给dom加一个 bottom 60px
+		这里用到了  vue  mixin  ！！！
 		
 		
 		
